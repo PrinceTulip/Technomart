@@ -381,6 +381,7 @@ input:-ms-input-placeholder {
   background: #32425c;
   padding: 0 50px;
   border-bottom: 5px solid #293449;
+  margin-bottom: 60px;
 }
 
 .nav-bar li {
