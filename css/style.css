@@ -395,7 +395,7 @@ input:-ms-input-placeholder {
   display: block;
   font-size: 17px;
   color: #ffffff;
-  padding: 20px 25px;
+  padding: 16.5px 25px;
   text-align: center;
 }
 
@@ -485,8 +485,6 @@ input:-ms-input-placeholder {
   top: 34px;
 }
 
-
-
 .category:nth-child(2) {
   background: #4aafde;
 }
@@ -511,6 +509,39 @@ input:-ms-input-placeholder {
   width: 621px;
   height: 265px;
   background: #4aafde;
+}
+
+.popular-goods {
+  background: #f7f3ec;
+  padding: 25px 24px 26px 30px;
+}
+
+.popular-goods h1 {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #32425c;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  float: right;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: #ee3643;
+  padding: 7px 56px 7px 61px;
+  border-radius: 3px;
+  font-weight: normal;
+}
+
+.btn:active {
+  background: #ba2732;
+
+
 }
 
 
