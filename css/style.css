@@ -266,6 +266,7 @@ input:-ms-input-placeholder {
 
 .header-bottom {
   background: #f1f5f7;
+  margin-bottom: 60px;
 }
 
 .title-shop {
@@ -318,7 +319,6 @@ input:-ms-input-placeholder {
   margin-top: 50px;
   font-weight: normal;
 }
-
 
 .user-block .login {
   position: relative;
@@ -399,14 +399,126 @@ input:-ms-input-placeholder {
   text-align: center;
 }
 
-.nav-bar  a:last-child {
-
-
-}
-
 .nav-bar a:hover {
   background: #212a3a;
 }
+
+.offers {
+  width: 940px;
+  margin-bottom: 33px;
+}
+
+.category h2 {
+  color: #ffffff;
+  padding-left: 24px;
+  padding-top: 24px;
+  padding-bottom: 15px;
+}
+
+.category a {
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: normal;
+  background: rgba(0,0,0,.1);
+  margin-left: 24px;
+  padding: 7px 24px 7px 24px;
+  border-radius: 3px;
+  margin-bottom: 22px;
+}
+
+.category a:hover {
+  background: rgba(0,0,0,.2);
+}
+
+.category a:active {
+  background: rgba(0,0,0,.3);
+}
+
+.category {
+  position: relative;
+  float: left;
+  width: 300px;
+  background: #f6b22d;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.category:nth-child(3) {
+  margin-right: 0;
+}
+
+.category .bucket {
+  position: absolute;
+  right: 49px;
+  top: 34px;
+}
+
+.category .new {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.category .tool {
+  position: absolute;
+  right: 33px;
+  top: 34px;
+}
+
+.category .track {
+  position: absolute;
+  right: 43px;
+  top: 34px;
+}
+
+.category .basket {
+  position: absolute;
+  right: 61px;
+  top: 28px;
+}
+
+.category .courier {
+  position: absolute;
+  right: 43px;
+  top: 34px;
+}
+
+
+
+.category:nth-child(2) {
+  background: #4aafde;
+}
+
+.category:nth-child(3) {
+  background: #cc79d1;
+}
+
+.category:nth-child(4) {
+  background: #85d179;
+  float: right;
+  margin-right: 0;
+}
+
+.category:last-child {
+  margin-right: 0;
+  float:right;
+}
+
+.slider {
+  float: left;
+  width: 621px;
+  height: 265px;
+  background: #4aafde;
+}
+
+
+
+
+
+
+
 
 
 
