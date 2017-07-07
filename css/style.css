@@ -508,8 +508,35 @@ input:-ms-input-placeholder {
   float: left;
   width: 621px;
   height: 265px;
-  background: #4aafde;
 }
+
+.bxslider  h2 {
+  position: absolute;
+  font-size: 36px;
+  color: #ffffff;
+  top: 27px;
+  left: 26px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.bxslider span {
+  display: inline-block;
+  position: absolute;
+  top: 67px;
+  left: 26px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "PT Sans","Arial",sans-serif;
+}
+
+.bxslider .btn {
+  position: absolute;
+  bottom: 15px;
+  left: 25px;
+}
+
 
 .popular-goods {
   background: #f7f3ec;
@@ -540,9 +567,9 @@ input:-ms-input-placeholder {
 
 .btn:active {
   background: #ba2732;
-
-
 }
+
+
 
 
 
