@@ -539,9 +539,10 @@ input:-ms-input-placeholder {
 
 
 .popular-goods {
-  background: #f7f3ec;
-  padding: 25px 24px 26px 30px;
-}
+   background: #f7f3ec;
+   padding: 25px 24px 26px 30px;
+   margin-bottom: 20px;
+ }
 
 .popular-goods h1 {
   display: inline-block;
@@ -552,6 +553,27 @@ input:-ms-input-placeholder {
   text-align: center;
   margin: 0;
   padding-top: 10px;
+}
+
+.popular-firms {
+  background: #f7f3ec;
+  padding: 25px 24px 26px 30px;
+  margin-bottom: 20px;
+}
+
+.popular-firms h1 {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #32425c;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.popular-firms .btn {
+  width: 138px;
 }
 
 .btn {
@@ -568,6 +590,229 @@ input:-ms-input-placeholder {
 .btn:active {
   background: #ba2732;
 }
+
+.product-items .product-item {
+  float: left;
+  width: 218px;
+  height: 317px;
+  border: 1px solid #e5e5e5;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.product-item:nth-child(4) {
+  position: relative;
+}
+
+.product-item:nth-child(4)::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 59px;
+  background: url("../images/new.png")no-repeat;
+}
+
+
+.product-items .product-item:last-child {
+  margin-right: 0;
+}
+
+.product-item .drill9000 {
+  padding-top: 3px;
+  padding-left: 18px;
+}
+
+.product-item .drill3000 {
+  padding-top: 22px;
+  padding-left: 43px;
+}
+
+.product-item .drill6000 {
+  padding-top: 18px;
+  padding-left: 30px;
+}
+
+.product-item .drill2000 {
+  padding-top: 24px;
+  padding-left: 30px;
+}
+
+
+.product-item .title {
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  font-family: "PT Sans","Arial",sans-serif;
+  padding-bottom: 15px;
+}
+
+.product-item .title-new {
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  font-family: "PT Sans","Arial",sans-serif;
+  padding-bottom: 40px;
+}
+
+.product-item .oldprice {
+  display: inline-block;
+  color: #999999;
+  font-size: 17px;
+  padding-left: 82px;
+  text-decoration: line-through;
+  line-height: 18px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "PT Sans Bold","Arial",sans-serif;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.product-item .btn {
+  position: relative;
+  float: left;
+  padding: 9px 23px 9px 38px;
+  border-radius: 2px;
+  margin-left: 50px;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 0.7px;
+}
+
+.product-item .btn::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 121px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 19px 0 19px 20px;
+  border-color: transparent transparent transparent #ee3643;
+}
+
+.product-item .btn:active::after {
+  border-color: transparent transparent transparent #ba2732;
+}
+
+.drill-photo {
+  width: 220px;
+  height: 183px;
+}
+
+.product-item {
+  position: relative;
+}
+
+.product-item .product-controls {
+  position: absolute;
+  width: 218px;
+  height: 271px;
+  background: #ffffff;
+  bottom: 0px;
+  left: 0;
+  opacity: 0;
+  padding-top: 45px;
+}
+
+.product-item .product-controls:hover {
+  opacity: 1;
+  box-shadow: 0 0 10px #aeb2ba;
+}
+
+
+.product-controls a {
+  display: block;
+  color: #000;
+}
+
+.product-controls .buy {
+  position: relative;
+  background: #63a63e;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 135px;
+  border-radius: 3px;
+  padding-bottom: 8px;
+  padding-top: 7px;
+  text-align: center;
+  font-weight: normal;
+  margin: 0 auto;
+  border-bottom: 3px solid #367315;
+  margin-bottom: 7px;
+}
+
+.product-controls .buy::after {
+  position: absolute;
+  content: '';
+  background: url("../images/spritesheet.png") no-repeat;
+  background-position: -25px -25px;
+  width: 20px;
+  height: 20px;
+  top: 8px;
+  left: 11px;
+  opacity: 0.3;
+}
+
+.product-controls .buy:hover::after {
+  opacity: 1;
+}
+
+.product-controls .buy:hover {
+  background: #5fbb2d;
+}
+
+.product-controls .buy:active {
+  background: #518534;
+  border-bottom: 3px solid #518534;
+}
+
+.product-controls .bookmark {
+  position: relative;
+  background: #ffffff;
+  border: 3px solid #63a63e;
+  text-transform: uppercase;
+  color: #32425c;
+  max-width: 129px;
+  margin: 0 auto;
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 54px;
+}
+
+.product-controls .bookmark:hover {
+  border: 3px solid #32425c;
+}
+
+.product-controls .bookmark:active {
+  color: #c1c6ce;
+  border: 3px solid #c1c6ce;
+}
+
+.product-controls .btn {
+  color: #ffffff;
+}
+
+.product-controls .btn:nth-child(4) {
+  margin-top: 25px;
+
+
+}
+
+
+
+
+
+
+
+
 
 
 
