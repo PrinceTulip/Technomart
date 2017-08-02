@@ -802,8 +802,64 @@ input:-ms-input-placeholder {
 
 .product-controls .btn:nth-child(4) {
   margin-top: 25px;
+}
 
+.banner-firms {
+  margin-bottom: 85px;
+}
 
+.firm-item {
+  width: 218px;
+  height: 143px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e5e5;
+}
+
+.firm-item .image-firm {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  text-align: center;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+   transform: translateX(-50%) translateY(-50%);
+}
+
+.firm-item:nth-child(4) {
+  margin-right: 0;
+}
+
+.firm-item:nth-child(8) {
+  margin-right: 0;
+}
+
+.firm-item:hover {
+  box-shadow: 0 10px 25px rgba(41,52,73,.5);
+}
+
+.firm-item:active {
+  box-shadow:0 4px 10px rgba(41,52,73,.5);
+  opacity: 0.3;
+}
+
+.service-block {
+  padding-top: 70px;
+  padding-bottom: 104px;
+  background-color: #f2f6f8;
+}
+
+.service-block h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  padding-bottom: 38px;
+}
+
+.service-block p {
+  font-size: 13px;
+  font-weight: normal;
+  font-family: "PT Sans","Arial",sans-serif;
 }
 
 

@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f72ba96-9b12-4e1d-8525-574c3323ce9a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/AEG.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/DeWALT.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Hitachi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/LG.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Makita.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Metabo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/bosch.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/interscol.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
@@ -13,7 +21,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.4940945">
       <split-first>
@@ -21,8 +28,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="601">
-                  <caret line="204" column="29" lean-forward="false" selection-start-line="204" selection-start-column="29" selection-end-line="204" selection-end-column="29" />
+                <state relative-caret-position="655">
+                  <caret line="256" column="76" lean-forward="false" selection-start-line="256" selection-start-column="76" selection-end-line="256" selection-end-column="76" />
                   <folding />
                 </state>
               </provider>
@@ -35,8 +42,8 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="515">
-                  <caret line="592" column="0" lean-forward="true" selection-start-line="592" selection-start-column="0" selection-end-line="592" selection-end-column="0" />
+                <state relative-caret-position="703">
+                  <caret line="859" column="15" lean-forward="false" selection-start-line="859" selection-start-column="15" selection-end-line="859" selection-end-column="15" />
                   <folding />
                 </state>
               </provider>
@@ -69,8 +76,8 @@
         <option value="$PROJECT_DIR$/js.js" />
         <option value="$PROJECT_DIR$/javascript/jquery.bxslider.js" />
         <option value="$PROJECT_DIR$/css/jquery.bxslider.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -102,22 +109,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Technomart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Technomart" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="Technomart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Technomart" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Technomart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Technomart" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="javascript" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -139,6 +148,14 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
       <PhpTestRunnerSettings />
       <method />
@@ -175,15 +192,6 @@
     </configuration>
     <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
       <PhpTestRunnerSettings />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -244,12 +252,16 @@
       <workItem from="1499495544058" duration="597000" />
       <workItem from="1499626497552" duration="816000" />
       <workItem from="1499682609092" duration="10044000" />
-      <workItem from="1499947698839" duration="5045000" />
+      <workItem from="1499947698839" duration="5147000" />
+      <workItem from="1499969087720" duration="124000" />
+      <workItem from="1501104820674" duration="69000" />
+      <workItem from="1501679028167" duration="32000" />
+      <workItem from="1501679208424" duration="4004000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107591000" />
+    <option name="totallyTimeSpent" value="111922000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1692" height="1017" extended-state="0" />
@@ -259,12 +271,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -294,7 +306,7 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -599,20 +611,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/jquery.bxslider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1607" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/jquery.bxslider.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/jquery.bxslider.js" />
+    <entry file="file://$USER_HOME$/Downloads/jquery.bxslider.min.js" />
     <entry file="file://D:/Project-Nerds/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5236">
@@ -620,13 +620,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/jquery.bxslider.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/jquery.bxslider.css" />
     <entry file="file://$PROJECT_DIR$/javascript/jquery.bxslider.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26877">
@@ -645,22 +639,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="20" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="859" column="15" lean-forward="false" selection-start-line="859" selection-start-column="15" selection-end-line="859" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="204" column="29" lean-forward="false" selection-start-line="204" selection-start-column="29" selection-end-line="204" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="592" column="0" lean-forward="true" selection-start-line="592" selection-start-column="0" selection-end-line="592" selection-end-column="0" />
+        <state relative-caret-position="655">
+          <caret line="256" column="76" lean-forward="false" selection-start-line="256" selection-start-column="76" selection-end-line="256" selection-end-column="76" />
           <folding />
         </state>
       </provider>
