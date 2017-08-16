@@ -305,7 +305,7 @@
                 <div class="map">
                     <img src="images/map.png" width="300" height="158" alt="img-map">
                 </div>
-                <a class="btn" href="#">Заблудились? Напиишите нам</a>
+                <a  class="btn contact-us" href="#">Заблудились? Напиишите нам</a>
             </div>
         </div>
     </div>
@@ -382,5 +382,35 @@
     </div>
   </div>
 </div>
+<div class="popup">
+    <button class="popup-close" type="button" title="Закрыть">Закрыть</button>
+  <form class="form-info clearfix" action="#" method="post">
+    <div class="write-us-fields">
+      <div class="wrapper-label">
+        <label class="name" for="my-name">
+          Ваше имя:
+        </label>
+        <input type="text" id="my-name" name="name-inf" placeholder="Представтесь, пожалуйста">
+      </div>
+      <div class="wrapper-label">
+        <label class="email" for="my-mail">
+          Ваше е-mail:
+        </label>
+        <input type="text" id="my-mail" name="name-mail" placeholder="Для отправки ответа">
+      </div>
+        <label class="letter-text" for="letter">
+          Текст письма:
+        </label>
+        <textarea class="text-letter" style="resize: none" cols="24" rows="6" id="letter" name="name-inf"
+                  placeholder="В свободной форме"></textarea>
+    </div>
+    <div class="write-us-button">
+      <div class="block-button clearfix">
+        <button class="btn" type="submit">Отправить</button>
+      </div>
+    </div>
+    </form>
+</div>
+<script src="javascript/scripts.js"></script>
 </body>
 </html>
