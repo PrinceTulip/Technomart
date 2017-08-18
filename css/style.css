@@ -1199,7 +1199,7 @@ input:-ms-input-placeholder {
   cursor: pointer;
   border: none;
   outline: none;
-  background-color: #ffffff;
+  background-color: transparent;
 
 }
 
@@ -1316,7 +1316,6 @@ input:-ms-input-placeholder {
 .write-us-button {
   padding: 37px 80px 37px 80px;
   background-color: #f1f1f1;
-
 }
 
 .popup ::-webkit-input-placeholder {
@@ -1325,11 +1324,71 @@ input:-ms-input-placeholder {
 
 .popup .btn:active {
   background-color: #ba2732;
-  
 }
 
 
+/*--------------------------------------------POPUP END-----------------------*/
+.map {
+  cursor: pointer;
+}
 
+
+.popup-map {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -385px;
+  margin-left: -470px;
+  box-shadow: 0 0 15px 1px rgba(35,31,32,.5);
+  font-family: "Cuprum","Arial",sans-serif;
+  height: 448px;
+}
+
+
+.popup-map-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0% {transform: translateY(-2000px); }
+  70% {transform: translateY(30px); }
+  90% {transform: translateY(-10px); }
+  100% {transform: translateY(0); }
+}
+
+.popup-map .popup-map-close {
+  position: absolute;
+  top: 0px;
+  right: -8px;
+  font-size: 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+}
+
+.popup-map .popup-map-close::before,
+.popup-map .popup-map-close::after {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: 15px;
+  width: 30px;
+  height: 5px;
+  background: #ee3643;
+  border-radius: 1px;
+}
+
+.popup-map .popup-map-close::before {
+  transform: rotate(45deg);
+}
+
+.popup-map .popup-map-close::after {
+  transform: rotate(-45deg);
+}
 
 
 
