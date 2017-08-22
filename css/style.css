@@ -377,6 +377,11 @@ input:-ms-input-placeholder {
   background: #212a3a;
 }
 
+.nav-bar a:active {
+  background-color: #1d2739;
+  color: #868c95;
+}
+
 .offers {
   width: 940px;
   margin-bottom: 33px;
