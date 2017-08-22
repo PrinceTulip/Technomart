@@ -1,78 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Technomart Catalog</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Techomart catalog</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-ui.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#slider-range" ).slider({
+                range: true,
+                min: 0,
+                max: 40000,
+                values: [ 0, 30000 ],
+                slide: function( event, ui ) {
+                    $( "#amount" ).val( "" + ui.values[ 0 ] );
+                    $( "#amount-1" ).val( "" + ui.values[ 1 ] );
+                }
+            });
+            $( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) );
+            $( "#amount-1" ).val( "" + $( "#slider-range" ).slider( "values", 1 ) );
+
+            // Изменение местоположения ползунка при вводе данных в первый елемент input
+            $("input#amount").change(function(){
+                var value1 = $("input#amount").val();
+                var value2 = $("input#amount-1").val();
+                if (parseInt(value1) > parseInt(value2)){
+                    value1 = value2;
+                    $("input#amount").val(value1);
+                }
+                $("#slider-range").slider("values",0,value1);
+            });
+
+            // Изменение местоположения ползунка при вводе данных во второй елемент input
+            $("input#amount-1").change(function() {
+                var value1=$("input#amount").val();
+                var value2=$("input#amount-1").val();
+
+                if (parseInt(value1) > parseInt(value2)){
+                    value2 = value1;
+                    $("input#amount-1").val(value2);
+                }
+                $("#slider-range").slider("values",1,value2);
+            });
+
+            //Фильтрация ввода в поля
+            jQuery('#amount,amount-1').keypress(function(event){
+                var key, keyChar;
+                if(!event) var event = window.event;
+
+                if (event.keyCode) key =event.keyCode;
+                else if(event.which) key = event.which;
+
+                if(key==null || key ==0  || key==8 || key==13 || key==9 || key==46 || key==37 || key==39 )
+                    return true;
+                keyChar=String.fromCharCode(key);
+
+                if(!/\d/.test(keyChar)) return false;
+
+            });
+
+        });
+    </script>
 </head>
-<body class="second">
+<body class="catalog-page">
 <header class="main-header">
     <div class="header-up">
         <div class="container clearfix">
-            <div class="nav-block">
-                <div class="logo">
-                    <a class="header-logo" href="#">Техномарт</a>
-                </div>
-                <nav class="main-navigation">
-                    <div class="search-block">
-                        <form class="form-menu" action="#" method="post">
-                            <input class="search" type="text" id="my-search" name="name-inf" placeholder="Поиск:">
-                        </form>
-                    </div>
-                    <div class="nav-links">
-                        <a class="notes nl"  href="#">Закладки: 0</a>
-                        <a class="basket bl"  href="#">Корзина: 0</a>
-                        <a class="order" href="#">Оформить заказ</a>
-                    </div>
-                </nav>
-            </div>
+            <a class="header-logo" href="#">Техномарт</a>
+            <form class="form-menu" action="#" method="post">
+                <input type="search" name="search" class="search" placeholder="Поиск:">
+                <input type="submit" name="submit" class="submit header-search" value="Поиск:">
+            </form>
+            <a class="notes"  href="#">Закладки: 0</a>
+            <a class="basket-link"  href="#">Корзина: 0</a>
+            <a class="checkout" href="#">Оформить заказ</a>
         </div>
-    </div>
-    <div class="header-bottom">
-        <div class="container clearfix">
-            <div class="title-shop">
-                <p>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
-            </div>
-            <div class="placenumber">
-                <div class="phone">
-                    <p class="mobile">+7 (812) 555-05-55</p>
+        <div class="header-bottom">
+            <div class="container clearfix">
+                <div class="title-shop">
+                    <p>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
                 </div>
-                <p class="adress">г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
-            </div>
-            <div class="user-block">
-                <a class="login" href="#">Войти</a>
-                <a class="registration" href="#">Регистрация</a>
-            </div>
-            <div class="nav-bar">
-                <ul>
-                    <li>
-                        <a href="#">Главная</a>
-                    </li>
-                    <li>
-                        <a href="#">Компания</a>
-                    </li>
-                    <li>
-                        <a href="#">Каталог</a>
-                    </li>
-                    <li>
-                        <a href="#">Новости</a>
-                    </li>
-                    <li>
-                        <a href="#">Спецпредложения</a>
-                    </li>
-                    <li>
-                        <a href="#">Доставка</a>
-                    </li>
-                    <li>
-                        <a href="#">Контакты</a>
-                    </li>
-                </ul>
+                <div class="placenumber">
+                    <div class="phone">
+                        <p class="mobile">+7 (812) 555-05-55</p>
+                    </div>
+                    <p class="adress">г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
+                </div>
+                <div class="user-block">
+                    <a class="catalog-user-block" href="#">Равшан Джамшутович</a>
+                    <ul class="users-menu">
+                        <li>
+                            <a href="#">Мои Заказы</a>
+                        </li>
+                        <li>
+                            <a href="#">Личный Кабинет</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-bar">
+                    <ul>
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#">Компания</a>
+                        </li>
+                        <li>
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Спецпредложения</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </header>
-
+<main class="inner-content">
+    <div class="container clearfix">
+        <ul class="breadcrumbs">
+            <li>
+                <a class="home" href="index.html">Home
+                    <img src="images/icon-home.png" width="15" height="12" alt="icon-home">
+                </a>
+            </li>
+            <li>
+                <a href="#">Каталог</a>
+            </li>
+            <li>
+                <a href="#">Инструмент</a>
+            </li>
+            <li>
+                <a href="#">Перфораторы</a>
+            </li>
+        </ul>
+        <div class="section-title">
+            <h2>Перфораторы</h2>
+        </div>
+        <div class="inner-column-left">
+            <div class="filters-title">
+                <h3>Фильтр</h3>
+            </div>
+            <div class="slider-small clearfix">
+                    <label for="amount">Цена:</label>
+                <div class="slider-bg">
+                    <div id="slider-range"></div>
+                </div>
+                <input type="text" id="amount">
+                <input type="text" id="amount-1">
+            </div>
+        </div>
+    </div>
+</main>
 </body>
 </html>
