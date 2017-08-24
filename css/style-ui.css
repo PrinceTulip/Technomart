@@ -11,9 +11,9 @@ ol, ul {list-style: none;}
 }
 
 .slider-small {
-    width: 300px;
+    width: 250px;
     margin: 0 auto;
-    margin-bottom: 52px;
+    margin-bottom: 25px;
 }
 
 .slider-small input {
