@@ -370,7 +370,7 @@ input:-ms-input-placeholder {
   display: block;
   font-size: 17px;
   color: #ffffff;
-  padding: 16.5px 25px;
+  padding: 16.5px 24px;
   text-align: center;
 }
 
@@ -1402,7 +1402,7 @@ input:-ms-input-placeholder {
 /*------------------INDEX-PAGE-CONTENT-END----------------------*/
 
 .catalog-page .phone {
-  width: 267px;
+  width: 270px;
 }
 
 .catalog-page .header-bottom {
@@ -2085,9 +2085,11 @@ input:-ms-input-placeholder {
 }
 
 .about-drill p {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: 'Cuprum', Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 600;
+  font-style: normal;
+  color: #000;
 
 }
 
